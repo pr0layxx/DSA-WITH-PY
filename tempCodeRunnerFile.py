@@ -1,0 +1,1 @@
+t1.next != None
