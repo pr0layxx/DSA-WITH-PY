@@ -20,13 +20,26 @@ class doublyLL:
         t.next = temp
         temp.prev = t.next
 
+    def insertAtBeg(self, value):
+        temp = Node(value)
+        if self.head == None:
+            self.head = temp
+            return
+        temp.next = self.head
+        self.head.prev = temp
+        self.head = temp
+
     def printDoublyLL(self):
         t1 = self.head
         while t1.next != None:
-            print(t1.data)
+            print(t1.data, end=" <--> ")
             t1 = t1.next
         print(t1.data)
 
+
 obj = doublyLL()
 obj.insertAtEnd(20)
+obj.insertAtEnd(30)
+obj.insertAtEnd(40)
+obj.insertAtBeg(10)
 obj.printDoublyLL()
