@@ -1,7 +1,7 @@
 # DSA With Python 🚀
 
 Welcome to my **Data Structures & Algorithms (DSA)** journey using **Python**!  
-This repository contains all codes, notes, and practice problems as I learn and master DSA from basics to advanced.
+This repository contains all codes, notes, and practice problems as I learn and master DSA from basics to advanced from chai aur code.
 
 ---
 
