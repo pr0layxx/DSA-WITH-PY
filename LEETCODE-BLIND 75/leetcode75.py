@@ -1,5 +1,7 @@
 # QESTION NO: 121
 from typing import List
+
+
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         l, r = 0, 1
@@ -24,6 +26,7 @@ class Solution:
 
 # QUESTION NO: 217
 
+
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         hashSet = set()
@@ -34,8 +37,35 @@ class Solution:
             hashSet.add(i)
         return False
 
-obj = Solution()
-nums = [1, 2, 3, 1]
 
-result = obj.containsDuplicate(nums)
-print("Contains Duplicate:", result)
+# obj = Solution()
+# nums = [1, 2, 3, 1]
+
+# result = obj.containsDuplicate(nums)
+# print("Contains Duplicate:", result)
+
+
+# QUESTION NO: 238
+
+
+class Solution:
+    def productExceptSelf(self, nums: List[int]) -> List[int]:
+        res = [1] * (len(nums))
+
+        prefix = 1
+        for i in range(len(nums)):
+            res[i] = prefix
+            prefix *= nums[i]
+        postfix = 1
+        for i in range(len(nums) - 1, -1, -1):
+            res[i] *= postfix
+            postfix *= nums[i]
+        return res
+
+obj = Solution()
+
+
+nums = [1, 2, 3, 4]
+
+result = obj.productExceptSelf(nums)
+print("Product Except Self:", result)
