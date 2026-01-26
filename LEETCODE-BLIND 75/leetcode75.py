@@ -15,8 +15,27 @@ class Solution:
         return maxP
 
 
-obj = Solution()
-prices = [7, 1, 5, 3, 6, 4]
-result = obj.maxProfit(prices)
+# obj = Solution()
+# prices = [7, 1, 5, 3, 6, 4]
+# result = obj.maxProfit(prices)
 
-print("Max Profit:", result)
+# print("Max Profit:", result)
+
+
+# QUESTION NO: 217
+
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        hashSet = set()
+
+        for i in nums:
+            if i in hashSet:
+                return True
+            hashSet.add(i)
+        return False
+
+obj = Solution()
+nums = [1, 2, 3, 1]
+
+result = obj.containsDuplicate(nums)
+print("Contains Duplicate:", result)
