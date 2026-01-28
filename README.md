@@ -11,6 +11,7 @@ This repository contains all codes, notes, and practice problems as I learn and 
 - Variables, loops, functions
 - Lists, tuples, dictionaries, sets
 - OOP basics
+- blind 75
 
 ### ✔ Data Structures
 - Arrays / Lists
