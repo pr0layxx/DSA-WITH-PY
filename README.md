@@ -10,8 +10,7 @@ This repository contains all codes, notes, and practice problems as I learn and 
 ### ✔ Core Python Refresher
 - Variables, loops, functions
 - Lists, tuples, dictionaries, sets
-- OOP basics
-- blind 75
+- OOP basics- blind 75
 
 ### ✔ Data Structures
 - Arrays / Lists
@@ -35,5 +34,3 @@ This repository contains all codes, notes, and practice problems as I learn and 
   - Binary search
 - Greedy
 - Dynamic Programming (DP)
-
----
